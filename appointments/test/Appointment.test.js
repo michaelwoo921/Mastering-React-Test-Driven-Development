@@ -24,4 +24,19 @@ describe('Appointment', () => {
 
     expect(container.textContent).toMatch('Jordan');
   });
+
+  describe('AppointmentsDayView', () => {
+    let container;
+
+    const render = (component) => ReactDOM.render(component, container);
+
+    beforeEach(() => {
+      container = document.createElement('div');
+    });
+
+    it('renders a div with the right id', () => {
+      render(<AppointmentsDayView />);
+      expect(container.querySelector('div#appointmentsDayView')).not.toBeNull();
+    });
+  });
 });
