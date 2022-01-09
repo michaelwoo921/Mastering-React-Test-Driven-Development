@@ -6,7 +6,10 @@
   "scripts": {
     "test": "jest --watchAll"
   },
-  "author": "",
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
+  "author": "Michael Woo",
   "license": "ISC",
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.16.7",
