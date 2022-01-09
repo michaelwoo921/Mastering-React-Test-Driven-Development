@@ -36,7 +36,7 @@ describe('Appointment', () => {
     });
 
     it('renders a div with the right id', () => {
-      render(<AppointmentsDayView />);
+      render(<AppointmentsDayView appointments={[]} />);
       expect(container.querySelector('div#appointmentsDayView')).not.toBeNull();
     });
   });

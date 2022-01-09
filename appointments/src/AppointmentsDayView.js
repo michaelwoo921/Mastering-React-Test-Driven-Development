@@ -1,3 +1,5 @@
 import React from 'react';
 
-export const AppointmentsDayView = () => <div id="appointmentsDayView"></div>;
+export const AppointmentsDayView = ({ appointments }) => (
+  <div id="appointmentsDayView"></div>
+);
