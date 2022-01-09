@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Appointment } from '../src/Appointment';
+import { AppointmentsDayView } from '../src/AppointmentsDayView';
 
 describe('Appointment', () => {
   let customer, container;
